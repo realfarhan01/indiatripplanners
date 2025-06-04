@@ -75,8 +75,6 @@ body {
   overflow-x: hidden;
   /* Small devices */
 }
-<<<<<<< HEAD
-=======
  body > .skiptranslate {
 /*  display: none;*/
 }
@@ -161,7 +159,7 @@ select.goog-te-combo {
     font-family: var(--body-font);
     font-size: 14px;
     font-weight: 600;
-    padding: 10px 0px;
+    padding: 10px;
     z-index: 1;
     letter-spacing: 0.1px;
     height: max-content;
@@ -174,7 +172,6 @@ select.goog-te-combo:focus{
 div#\:0\.targetLanguage {
     display: inline-block;
 }
->>>>>>> master
 @media (max-width: 767px) {
   body {
     font-size: 14px;
@@ -473,13 +470,6 @@ p.has-drop-cap {
     color: white;
     padding: 15px;
 }
-<<<<<<< HEAD
-
-@media (max-width: 767px) {
-  .sidebar-btn .side-whatsapp-btn a {
-    right: 20px;
-    bottom: 9.5%;
-=======
 a.vs-btn.style6.text-capitalize.banner-first-btn {
     top: 160px;
 }
@@ -487,28 +477,20 @@ a.vs-btn.style6.text-capitalize.banner-first-btn {
   .sidebar-btn .side-whatsapp-btn a {
     right: 20px;
     bottom: 13%;
->>>>>>> master
     height: 40px;
     width: 40px;
     padding: 7px;
   }
   .sidebar-btn .side-calling-btn a {
     right: 20px;
-<<<<<<< HEAD
-    bottom: 16%;
-=======
     bottom: 22%;
->>>>>>> master
     height: 40px;
     width: 40px;
     padding: 8px;
   }
-<<<<<<< HEAD
-=======
   a.vs-btn.style6.text-capitalize.banner-first-btn {
       top: 120px;
   }
->>>>>>> master
 }
 .sidebar-btn .side-whatsapp-btn a:before {
   content: "";
@@ -4863,12 +4845,8 @@ a.text-theme:hover,
 }
 @media (max-width: 991px) {
   #navbars .logo {
-<<<<<<< HEAD
-    max-width: 100px;
-=======
    max-width: 150px;
    padding: 5px 0px;
->>>>>>> master
   }
 }
 
@@ -10734,8 +10712,6 @@ a.text-theme:hover,
   z-index: 10;
   padding: 0 20px;
 }
-<<<<<<< HEAD
-=======
 .banner-content-two{
   bottom: 5%;
 }
@@ -10745,7 +10721,6 @@ a.text-theme:hover,
 .banner-content-four{
   bottom: 5%;
 }
->>>>>>> master
 .swiper.india-trip-slider .slide-content h2 {
   font-size: clamp(2rem, 5vw, 4rem);
   margin-bottom: 20px;
