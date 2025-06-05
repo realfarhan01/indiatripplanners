@@ -177,6 +177,9 @@ div#\:0\.targetLanguage {
     font-size: 14px;
     line-height: 24px;
   }
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+      display: none;
+  }
 }
 
 iframe {
