@@ -171,6 +171,7 @@ select.goog-te-combo:focus{
 }
 div#\:0\.targetLanguage {
     display: inline-block;
+    margin-right: 10px;
 }
 @media (max-width: 767px) {
   body {
@@ -4026,7 +4027,7 @@ a.text-theme:hover,
   gap: 10px;
 }
 .header-top .contact-info ul li i {
-  color: #ffffff;
+  color: #000;
 }
 .header-top .contact-info ul li a {
   color: #000000;
