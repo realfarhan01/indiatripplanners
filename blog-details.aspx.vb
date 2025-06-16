@@ -1,5 +1,5 @@
 ﻿
-Partial Class blog
+Partial Class blog_details
     Inherits System.Web.UI.Page
     Dim BLL As New BusinessLogicLayer
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load

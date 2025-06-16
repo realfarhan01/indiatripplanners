@@ -1,5 +1,5 @@
 ﻿
-Partial Class blogs
+Partial Class blog
     Inherits System.Web.UI.Page
     Dim BLL As New BusinessLogicLayer
     Public BannerImage As String = "banner-03.jpg"
