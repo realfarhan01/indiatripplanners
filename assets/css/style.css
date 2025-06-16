@@ -104,6 +104,21 @@ body {
     display: none !important;
 }
 
+section.vs-breadcrumb::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #01060fe0;
+    opacity: 0.75;
+    z-index: 0;
+}
+.breadcrumb-content {
+    z-index: 999;
+    position: relative;
+}
 element.style {
     position: relative;
     display: inline-flex
@@ -5314,9 +5329,10 @@ a.text-theme:hover,
   line-height: 111.111%;
   text-transform: capitalize;
 }
-
 .breadcrumb-menu {
-  margin-top: 10px;
+    margin-top: 10px;
+    z-index: 999;
+    position: relative;
 }
 @media (max-width: 991px) {
   .breadcrumb-menu {
