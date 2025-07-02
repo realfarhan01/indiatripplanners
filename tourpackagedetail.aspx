@@ -24,25 +24,69 @@
                </div>
             </div>
          </div>
-      </section>  
-      <section class="vs-destination-details space bg-theme-07">
+      </section> 
+      <div class="container vs-contact mt-5">
+          <div class="row justify-content-center">
+              <div class="col-md-12 index-form">
+                  <div action="#." method="post" class="form-style1">
+                     <div class="row">
+                        <div class="col-md-6 form-group">
+                            <asp:TextBox ID="txtName"  class="form-control" placeholder="Enter Your Name*" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="mb-1" ControlToValidate="txtName" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Name*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <asp:TextBox ID="txtMobile" class="form-control" placeholder="Enter Your Phone Number*" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="mb-1" ControlToValidate="txtMobile" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Phone Number*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <asp:TextBox ID="txtEmail" class="form-control" placeholder="Enter Your Email*" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" CssClass="mb-1" ControlToValidate="txtEmail" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Email*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-md-6 form-group">
+                             <asp:DropDownList id="ddlRequirement" name="ddlState" runat="server"  CssClass="form-select nice-select ddlRequirement">
+                                <asp:ListItem Value="">Select Tour Packages</asp:ListItem>
+                                <asp:ListItem Value="North India">North India</asp:ListItem>
+                                <asp:ListItem Value="South India">South India</asp:ListItem>
+                                <asp:ListItem Value="Central India">Central India</asp:ListItem>
+                                <asp:ListItem Value="North-East India">North-East India</asp:ListItem>
+                                <asp:ListItem Value="UAE">UAE</asp:ListItem>
+                                <asp:ListItem Value="Thailand">Thailand</asp:ListItem>
+                                <asp:ListItem Value="Nepal">Nepal</asp:ListItem>
+                                <asp:ListItem Value="Bhutan">Bhutan</asp:ListItem>
+                                <asp:ListItem Value="Other">Other</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" CssClass="mb-1" ControlToValidate="ddlRequirement" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Select Tour Package*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-12 form-group">
+                            <asp:TextBox ID="txtMsg" TextMode="MultiLine" class="form-control" placeholder="Your Message..." runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" CssClass="mb-1" ControlToValidate="txtMsg" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Message...*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-12 form-group mt-2 mb-0 text-center">
+                            <asp:Button formnovalidate="formnovalidate" ID="btnSubmit" ValidationGroup="contact-page" class="vs-btn" runat="server" Text="Submit" />
+                        </div>
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <section class="vs-destination-details space">
          <div class="container">
             <div class="row gx-3 gx-xl-5 gy-5">
                <div class="col-lg-8">
                   <div class="vs-destination-single">
                      <div class="row align-items-center gy-3 mb-4">
                         <div class="col-8 col-sm-10">
-                           <h2 class="destination-single-title"> Information </h2>
+                           <h5> Information </h5>
                         </div>
                         <p class="text-details"><asp:Literal ID="LitPackageDetails" runat="server"></asp:Literal></p>
 
                         <div class="col-8 col-sm-10">
-                           <h2 class="destination-single-title"> Itinerary </h2>
+                           <h5> Itinerary </h5>
                         </div>
                          <p class="text-details"><asp:Literal ID="LitPackageItinerary" runat="server"></asp:Literal></p>
 
                         <div class="col-8 col-sm-10">
-                           <h2 class="destination-single-title"> Inclusion</h2>
+                           <h5> Inclusion</h5>
                         </div>
                         <p class="text-details"><asp:Literal ID="LitPackageInclusion" runat="server"></asp:Literal></p>
                          <asp:Literal ID="LitLocationEmbed" runat="server"></asp:Literal>

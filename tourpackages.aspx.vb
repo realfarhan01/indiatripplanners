@@ -27,9 +27,9 @@ Partial Class tourpackages
                 LitPageTitle2.Text = PageTitle & " "
                 LitPageTitle3.Text = PageTitle & " "
             Else
-                LitPageTitle.Text = "de l'Inde "
-                LitPageTitle2.Text = "de l'Inde "
-                LitPageTitle3.Text = "de l'Inde "
+                LitPageTitle.Text = "Tour Packages"
+                LitPageTitle2.Text = "Tour Packages"
+                LitPageTitle3.Text = "Our Tour Packages"
             End If
         End If
         Dim rptData As SqlDataReader = BLL.GetTourPackages(PageName, "", 0)

@@ -116,8 +116,9 @@ section.vs-breadcrumb::before {
     z-index: 0;
 }
 .breadcrumb-content {
-    z-index: 999;
+    z-index: 99;
     position: relative;
+    top:50%;
 }
 element.style {
     position: relative;
@@ -459,6 +460,11 @@ p.has-drop-cap {
   margin-bottom: 20px;
 }
 
+.index-form {
+    border: 2px solid #217c3d;
+    padding: 20px;
+    border-radius: 15px;
+}
 .sidebar-btn .side-calling-btn a {
     position: fixed;
     z-index: 99999;
@@ -1225,14 +1231,17 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px rgba(var(--second-theme-color-rgb), 0.07) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
-
+.ddlRequirement {
+    padding: 0 20px !important;
+    background: #eff1f2 !important;
+}
 .form-select,
 select {
-  line-height: 1.5;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
+    line-height: 1.5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
 }
 
 input::-webkit-outer-spin-button,
@@ -1344,7 +1353,7 @@ label {
 
 .form-group {
   --bs-gutter-x: 14px;
-  margin-bottom: var(--bs-gutter-x);
+  /*margin-bottom: var(--bs-gutter-x);*/
   margin-top: 0;
   position: relative;
 }
@@ -1687,13 +1696,13 @@ textarea.is-invalid {
 ==================================*/
 /*------------------- 3.1. Preloader -------------------*/
 .preloader {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 99999;
-  background-color: var(--title-color);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999999999;
+    background-color: var(--title-color);
 }
 .preloader .vs-btn {
   padding: 20px 20px;
@@ -2075,7 +2084,6 @@ textarea.is-invalid {
 .link-btn:hover::before {
   width: 100%;
 }
-
 .expand-btn {
   color: var(--title-color);
   font-weight: 500;
@@ -3932,7 +3940,7 @@ a.text-theme:hover,
 /*------------------- 4.2. Header  -------------------*/
 .vs-header {
   position: relative;
-  z-index: 41;
+  z-index: 999;
 }
 .vs-header.layout1 {
   position: absolute;
@@ -4016,7 +4024,7 @@ a.text-theme:hover,
   width: 496px;
   height: 100%;
   top: 0;
-  right: -45px;
+  left: 0px;
   background-color: #ffffff;
   z-index: -1;
   transform: skewX(-45deg);
@@ -4851,7 +4859,7 @@ a.text-theme:hover,
 #navbars {
   position: fixed;
   top: 0;
-  z-index: 9;
+  z-index: 999;
   right: 0;
   left: 0;
   background: black;
@@ -5239,23 +5247,24 @@ a.text-theme:hover,
 
 /*------------------- 4.4. Breadcrumb  -------------------*/
 .vs-breadcrumb {
-  padding: 230px 0 180px;
-  position: relative;
+    padding: 230px 0 180px;
+    position: relative;
+    background-size: cover;
 }
 .vs-breadcrumb::after {
   position: absolute;
   content: "";
   width: 1006px;
   height: 33px;
-  right: -30px;
+  left: -40px;
   bottom: 0;
   background-color: rgb(242 102 34);
   transform: skewX(-56deg);
 }
 @media (max-width: 1199px) {
-  .vs-breadcrumb {
-    padding: 120px 0;
-  }
+.vs-breadcrumb {
+    padding: 180px 0px;
+}
   .vs-breadcrumb::after {
     width: 700px;
     height: 25px;
@@ -5263,7 +5272,7 @@ a.text-theme:hover,
 }
 @media (max-width: 991px) {
   .vs-breadcrumb {
-    padding: 100px 0;
+    padding: 210px 0;
   }
   .vs-breadcrumb::after {
     width: 500px;
@@ -5271,9 +5280,25 @@ a.text-theme:hover,
   }
 }
 @media (max-width: 767px) {
-  .vs-breadcrumb {
-    padding: 160px 0 80px;
-  }
+.vs-breadcrumb::after {
+    position: absolute;
+    content: "";
+    width: 1006px;
+    height: 33px;
+    left: -40px;
+    bottom: 0;
+    background-color: rgb(242 102 34);
+    transform: skewX(-56deg);
+}
+.vs-breadcrumb {
+    padding: 50px 0px 200px 0px;
+}
+    .index-form {
+        border: 2px solid #217c3d;
+        padding-top: 20px;
+        border-radius: 15px;
+        padding-bottom: 20px;
+    }
   .vs-breadcrumb::after {
     width: 250px;
     height: 15px;
@@ -5331,8 +5356,9 @@ a.text-theme:hover,
 }
 .breadcrumb-menu {
     margin-top: 10px;
-    z-index: 999;
+    z-index: 99;
     position: relative;
+    top:50%;
 }
 @media (max-width: 991px) {
   .breadcrumb-menu {
@@ -8317,10 +8343,11 @@ a.text-theme:hover,
   color: var(--white-color);
 }
 .tour-package-box.style-3 {
-  border-radius: 19px;
-  border: 1.5px solid var(--bg-color-10);
-  background: var(--white-color);
-  padding: 15px;
+    border-radius: 19px;
+    border: 1.5px solid var(--bg-color-10);
+    background: var(--white-color);
+    padding: 15px;
+    height: calc(100% - 0px);
 }
 .tour-package-box.style-3 .tour-package-thumb {
   border-radius: 13px;

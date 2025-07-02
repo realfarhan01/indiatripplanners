@@ -41,7 +41,7 @@ Partial Class index
         'dtlData.DataBind()
     End Sub
     Sub BindTourPackages()
-        Dim rptData As DataTable = BLL.ExecDataTable("Select Top 9 * from tblTourPackages Where ShowOnHomePage=1 and Deactivated=0")
+        Dim rptData As DataTable = BLL.ExecDataTable("Select Top 12 * from tblTourPackages Where ShowOnHomePage=1 and Deactivated=0")
         dtlTourPackages.DataSource = rptData
         dtlTourPackages.DataBind()
     End Sub
@@ -50,24 +50,29 @@ Partial Class index
         'RptReview.DataSource = rptData
         'RptReview.DataBind()
     End Sub
-    'Protected Sub btn_contact_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btn_contact.Click
-    '    'If txtCaptcha.Text = "412" Then
-    '    Dim pageurl As String = Request.UrlReferrer.ToString
-    '    Dim templateVars As New Hashtable()
-    '    'templateVars.Add("SenderName", txtName.Text)
-    '    'templateVars.Add("Contact", txtMobileNumber.Text)
-    '    'templateVars.Add("PickUpLocation", txtPickUpLocation.Text)
-    '    'templateVars.Add("DropUpLocation", txtDropUpLocation.Text)
-    '    'templateVars.Add("VehicleType", ddlType.SelectedValue)
-    '    'templateVars.Add("PickUpDate", txtPickUpDate.Text)
-    '    'templateVars.Add("PickUpTime", txtPickUpTime.Text)
-    '    templateVars.Add("PageName", pageurl)
-    '    templateVars.Add("IPAddress", Request.ServerVariables("remote_addr"))
-    '    Email.SendEmail("index_query.htm", templateVars, System.Configuration.ConfigurationManager.AppSettings("email"), System.Configuration.ConfigurationManager.AppSettings("infoemail"), "Contact Enquiry From Website Contact Page", System.Configuration.ConfigurationManager.AppSettings("bccemail"))
-    '    'txtName.Text = ""
-    '    'txtMobileNumber.Text = ""
-    '    'txtMsg.Text = ""
-    '    Page.ClientScript.RegisterClientScriptBlock(Me.GetType(), "error", "alert('Your details have been successfully submitted. We will contact you as soon as possible !!');window.location.href='/';", True)
-    '    'End If
-    'End Sub
+    Protected Sub btnSubmit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnSubmit.Click
+        If Page.IsValid Then
+            Try
+                If validation.isMobileNumber(txtMobile.Text) Then
+
+                    Dim BLL As New BusinessLogicLayer()
+                    Dim pageurl As String = Request.UrlReferrer.ToString
+                    Dim templateVars As New Hashtable()
+                    templateVars.Add("Name", txtName.Text)
+                    templateVars.Add("Contact", txtMobile.Text)
+                    templateVars.Add("PageName", pageurl)
+                    templateVars.Add("Requirement", ddlRequirement.SelectedValue)
+                    templateVars.Add("IPAddress", Request.ServerVariables("remote_addr"))
+                    BLL.ExecNonQueryProc("Prc_WebsiteQuery", "@Name", txtName.Text, "@ContactNo", txtMobile.Text, "@Destination", ddlRequirement.SelectedValue, "@PageName", pageurl, "@IP", Request.ServerVariables("remote_addr"))
+
+                    Email.SendEmail("contact_email.htm", templateVars, System.Configuration.ConfigurationManager.AppSettings("email"), System.Configuration.ConfigurationManager.AppSettings("infoemail"), "Contact Enquiry From Website")
+                    txtName.Text = ""
+                    txtMobile.Text = ""
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType(), "error", "alert('Your details has been submited successfully. We will contact you as soon!!');window.location.href='/';", True)
+                End If
+            Catch ex As Exception
+
+            End Try
+        End If
+    End Sub
 End Class

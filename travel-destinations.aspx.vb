@@ -8,7 +8,7 @@ Partial Class travel_destinations
         End If
     End Sub
     Sub BindData()
-        dtlData.DataSource = BLL.ExecDataTable("Select * from tbl_ProductCategory Where TourType='domestic' and Deactivated=0 and UserName='tirupati'")
+        dtlData.DataSource = BLL.ExecDataTable("Select Top 10 * from tbl_ProductCategory Where TourType='domestic' and Deactivated=0 and UserName='indiatripplanners'")
         dtlData.DataBind()
     End Sub
 End Class

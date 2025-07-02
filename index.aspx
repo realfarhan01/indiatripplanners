@@ -1,4 +1,7 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/web.master" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %> <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"></asp:Content>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/web.master" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %> 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
    <main class="main">
       <section class="z-index-common hero-layout1 overflow-clip">
@@ -10,8 +13,8 @@
                           <img src="images/banner/<%# Eval("BannerPic")%>" alt="<%# Eval("Title")%>">
                           <div class="slide-content">
                              <h2 class="text-white-color"><%# Eval("Title")%></h2>
-                             <p class="text-white-color">One Day Taj Mahal Tour from Delhi</p>
-                             <a href="#." class="vs-btn style6 text-capitalize banner-first-btn">Explore Now</a>
+                             <%--<p class="text-white-color">One Day Taj Mahal Tour from Delhi</p>--%>
+                             <a href="contact-us" class="vs-btn style6 text-capitalize banner-first-btn">Book Now</a>
                           </div>
                        </div>                        
                     </ItemTemplate>
@@ -22,6 +25,42 @@
             <div class="swiper-pagination"></div>
          </div>
       </section>
+      <div class="container vs-contact mt-5">
+          <div class="row justify-content-center">
+              <div class="col-md-12 index-form">
+                  <div action="#." method="post" class="form-style1 border-5">
+                     <div class="row">
+                        <div class="col-md-3 form-group">
+                            <asp:TextBox ID="txtName"  class="form-control" placeholder="Enter Your Name*" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="mb-1" ControlToValidate="txtName" ValidationGroup="index" runat="server" ErrorMessage="Please Enter Your Name*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <asp:TextBox ID="txtMobile" class="form-control" placeholder="Enter Your Phone Number*" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="mb-1" ControlToValidate="txtMobile" ValidationGroup="index" runat="server" ErrorMessage="Please Enter Your Phone Number*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-md-3 form-group">
+                             <asp:DropDownList id="ddlRequirement" name="ddlState" runat="server"  CssClass="form-select nice-select ddlRequirement">
+                                <asp:ListItem Value="">Select Tour Packages</asp:ListItem>
+                                <asp:ListItem Value="North India">North India</asp:ListItem>
+                                <asp:ListItem Value="South India">South India</asp:ListItem>
+                                <asp:ListItem Value="Central India">Central India</asp:ListItem>
+                                <asp:ListItem Value="North-East India">North-East India</asp:ListItem>
+                                <asp:ListItem Value="UAE">UAE</asp:ListItem>
+                                <asp:ListItem Value="Thailand">Thailand</asp:ListItem>
+                                <asp:ListItem Value="Nepal">Nepal</asp:ListItem>
+                                <asp:ListItem Value="Bhutan">Bhutan</asp:ListItem>
+                                <asp:ListItem Value="Other">Other</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" CssClass="mb-1" ControlToValidate="ddlRequirement" ValidationGroup="index" runat="server" ErrorMessage="Please Select Tour Package*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-md-3  form-group mt-2 mb-0">
+                            <asp:Button formnovalidate="formnovalidate" ID="btnSubmit" ValidationGroup="index" class="vs-btn" runat="server" Text="Submit" Style="width:-webkit-fill-available;"/>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </div>  
       <section class="pt-5 pb-5">
          <div class="container">
             <div class="row justify-content-between align-items-center">
@@ -251,7 +290,7 @@
             <div class="row">
                <div class="col-12">
                   <div class="text-center space-extra-top btn-trigger btn-bounce">
-                     <a href="travel-destinations" class="vs-btn style6 text-capitalize">View More</a>
+                     <a href="tour-packages" class="vs-btn style6 text-capitalize">View More</a>
                   </div>
                </div>
             </div>
@@ -277,7 +316,7 @@
                                 <ItemTemplate>
                                    <div class="swiper-slide">
                                       <div class="exclusive-gallery-box">
-                                         <a href="#.">
+                                         <a href="car-rental-services">
                                             <div class="gallery-thumb">
                                                <img src="images/vehicles/<%# Eval("ImageName")%>" alt="<%# Eval("VehicleName")%>" class="w-100" />
                                             </div>
@@ -286,47 +325,7 @@
                                       </div>
                                    </div>
                                 </ItemTemplate>
-                            </asp:Repeater>
-                           <%--<div class="swiper-slide">
-                              <div class="exclusive-gallery-box">
-                                 <a href="#.">
-                                    <div class="gallery-thumb">
-                                       <img src="assets/img/car-rent/01.jpg" alt="gallery" class="w-100" />
-                                    </div>
-                                    <h5 class="title line-clamp-2 text-center mt-2">Urbania</h5>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="exclusive-gallery-box">
-                                 <a href="#.">
-                                    <div class="gallery-thumb">
-                                       <img src="assets/img/car-rent/02.jpg" alt="gallery" class="w-100" />
-                                    </div>
-                                    <h5 class="title line-clamp-2 text-center mt-2">Ciaz</h5>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="exclusive-gallery-box">
-                                 <a href="#.">
-                                    <div class="gallery-thumb">
-                                       <img src="assets/img/car-rent/03.jpg" alt="gallery" class="w-100" />
-                                    </div>
-                                    <h5 class="title line-clamp-2 text-center mt-2">Bus</h5>
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="exclusive-gallery-box">
-                                 <a href="#.">
-                                    <div class="gallery-thumb">
-                                       <img src="assets/img/car-rent/04.jpg" alt="gallery" class="w-100" />
-                                    </div>
-                                    <h5 class="title line-clamp-2 text-center mt-2">Innova</h5>
-                                 </a>
-                              </div>
-                           </div>--%>
+                            </asp:Repeater>                           
                         </div>
                         <div class="exclusive-gallery-slider-pagination"></div>
                      </div>

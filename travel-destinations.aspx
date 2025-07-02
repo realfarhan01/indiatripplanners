@@ -27,7 +27,7 @@
             <div class="row gx-3 gy-3">
                 <asp:Repeater ID="dtlData" runat="server">
                     <ItemTemplate> 
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-md-6 col-lg-3">
                           <div class="destination-box-2">
                              <figure class="destination-thumb">
                                 <img src="images/productcategory/<%#Eval("ProductCategoryImage") %>" alt="<%# Eval("ProductCategory")%>" class="w-100" />

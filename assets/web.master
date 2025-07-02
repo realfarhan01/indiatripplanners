@@ -1,0 +1,575 @@
+﻿<%@ Master Language="VB" CodeFile="web.master.vb" Inherits="web" %>
+<!DOCTYPE html>
+<html>
+   <head runat="server">
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta name="author" content="https://www.indiatripplanners.com/" />
+      <title>Book Best Tour Package in India with Top Trip Planners</title>
+      <meta name=description content="Book Tour Package in India at Best Price with India Trip Planners, we are best trip planners in india, explore india tours by best travel agency from delhi" />
+      <meta name=keywords content="Affordable Trip Planners in New Delhi, Best Tour Planner in New Delhi, Weekend Trip Organisers in New Delhi, Best Tour Organizer in New Delhi, Best Trip Advisor in New Delhi" . />
+      <meta property="og:image" content="https://www.indiatripplanners.com/cmsimages/logo.png">
+      <meta name="twitter:image" content="https://www.indiatripplanners.com/cmsimages/logo.png" />
+      <link rel="canonical" href="https://www.indiatripplanners.com/" />
+      <meta name="robots" content="INDEX,FOLLOW" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png" />
+      <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png" />
+      <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png" />
+      <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png" />
+      <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png" />
+      <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png" />
+      <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png" />
+      <link rel="manifest" href="assets/img/favicons/manifest.json" />
+      <meta name="theme-color" content="#fff" />
+      <link rel="preconnect" href="https://fonts.googleapis.com/" />
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="assets/css/plugins.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+   </head>
+   <body>
+      <form id="form1" runat="server">
+         <script type="text/javascript">
+             var Tawk_API = Tawk_API || {},
+                 Tawk_LoadStart = new Date();
+             (function () {
+                 var s1 = document.createElement("script"),
+                     s0 = document.getElementsByTagName("script")[0];
+                 s1.async = true;
+                 s1.src = 'https://embed.tawk.to/5bd43e5765224c264051159b/default';
+                 s1.charset = 'UTF-8';
+                 s1.setAttribute('crossorigin', '*');
+                 s0.parentNode.insertBefore(s1, s0);
+             })();
+         </script>
+         <div class="sidebar-btn">
+            <div class="side-calling-btn">
+               <a href="tel:+918743855730">
+                  <i class="fa fa-phone"></i>
+               </a>
+            </div>
+            <div class="side-whatsapp-btn">
+               <a href="https://wa.me/+918743855730">
+                  <i class="fab fa-whatsapp"></i>
+               </a>
+            </div>
+         </div>
+         <div class="preloader">
+            <div class="preloader-inner">
+               <img src="assets/img/loderr.png" alt="logo" />
+            </div>
+         </div>
+         <div class="vs-menu-wrapper">
+            <div class="vs-menu-area text-center">
+               <div class="mobile-logo">
+                  <a href="/">
+                     <img src="assets/img/logo.png" alt="img" class="logo" />
+                  </a>
+                  <button class="vs-menu-toggle">
+                     <i class="fal fa-times"></i>
+                  </button>
+               </div>
+               <div class="vs-mobile-menu">
+                  <ul>
+                     <li>
+                        <a href="/">Home</a>
+                     </li>
+                     <li>
+                        <a href="travel-destinations">Travel Destinations</a>
+                     </li>
+                     <li>
+                        <a href="car-rental-services">Car Rental</a>
+                     </li>
+                     <li>
+                        <a href="tour-packages">Tour Packages</a>
+                     </li>
+                     <li>
+                        <a href="days-tours">Days Tours</a>
+                     </li>
+                     <li>
+                        <a href="testimonials">Feedback</a>
+                     </li>
+                     <li>
+                        <a href="contact-us">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div id="navbars" class="header-sticky navbars">
+            <div class="container custom-container">
+               <div class="row justify-content-between align-items-center">
+                  <div class="col-auto col-lg-2 order-3 order-md-1">
+                     <button class="vs-menu-toggle d-inline-block d-lg-none">
+                        <i class="fal fa-bars"></i>
+                     </button>
+                     <div class="logo d-none d-lg-block">
+                        <a href="/">
+                           <img src="assets/img/logo.png" alt="img" class="logo" />
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-xl-auto col-lg-auto col-sm-3 d-none d-sm-block order-2 order-md-2">
+                     <div class="logo d-lg-none">
+                        <a href="/">
+                           <img src="assets/img/logo.png" alt="img" class="logo" />
+                        </a>
+                     </div>
+                     <nav class="main-menu d-none d-lg-block">
+                        <ul>
+                           <li>
+                              <a href="/">Home</a>
+                           </li>
+                           <li>
+                              <a href="travel-destinations">Travel Destinations</a>
+                           </li>
+                           <li>
+                              <a href="car-rental-services">Car Rental</a>
+                           </li>
+                           <li>
+                              <a href="tour-packages">Tour Packages</a>
+                           </li>
+                           <li>
+                              <a href="days-tours">Days Tours</a>
+                           </li>
+                           <li>
+                              <a href="testimonials">Feedback</a>
+                           </li>
+                           <li>
+                              <a href="contact-us">Contact Us</a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <div class="col-xl-3 col-md-auto col-auto order-1 order-md-3">
+                     <div class="header-wc style2">
+                        <div class="logo d-sm-none">
+                           <a href="/">
+                              <img src="assets/img/logo.png" alt="img" class="logo" />
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <header class="vs-header layout1">
+            <div class="sticky-wrapper position-relative">
+               <div class="header-top-wrap">
+                  <div class="container custom-container">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="header-top">
+                              <div class="row g-3 justify-content-between align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="contact-info">
+                                       <ul class="custom-ul">
+                                          <li class=" d-none d-md-block">
+                                             <i class="fa-solid fa-phone-volume"></i>
+                                             <a href="tel:+918743855730">+91 874-385-5730</a>
+                                          </li>
+                                          <!-- <li>
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22" viewBox="0 0 4 22" fill="none">
+                                                <line x1="0.75" y1="2.774e-08" x2="0.749999" y2="21.6114" stroke="white" stroke-opacity="0.3" stroke-width="1.5" />
+                                                <line x1="3.5" y1="3.92926" x2="3.5" y2="17.682" stroke="white" stroke-opacity="0.3" />
+                                             </svg>
+                                          </li>
+                                          <li>
+                                             <i class="fa-solid fa-envelope"></i>
+                                             <a href="mailto:info@indiatripplanners.com">info@indiatripplanners.com</a>
+                                          </li> -->
+                                          <li>
+                                             <div id="google_translate_element"></div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6 d-none d-md-block">
+                                    <div class="social-share">
+                                       <span class="info-share">Follow on:</span>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22" viewBox="0 0 4 22" fill="none">
+                                          <line x1="0.75" y1="2.774e-08" x2="0.749999" y2="21.6114" stroke="white" stroke-opacity="0.3" stroke-width="1.5" />
+                                          <line x1="3.5" y1="3.92941" x2="3.5" y2="17.6821" stroke="white" stroke-opacity="0.3" />
+                                       </svg>
+                                       <ul class="custom-ul">
+                                          <li>
+                                             <a href="https://x.com/indiatrip_plan" target="_blank">
+                                                <img src="assets/img/icons/icon-twitter.png">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="https://www.facebook.com/IndiaTripplannerstouroperator" target="_blank">
+                                                <img src="assets/img/icons/icon-facebook.png">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="https://www.instagram.com/india_trip_planners/" target="_blank">
+                                                <img src="assets/img/icons/icon-instagram.png">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="https://www.youtube.com/@indiatripplanners" target="_blank">
+                                                <img src="assets/img/icons/icon-youtube.png">
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="https://in.pinterest.com/Indiatripplannersdelhi/" target="_blank">
+                                                <img src="assets/img/icons/icon-pinterest.png">
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="container custom-container">
+                  <div class="row justify-content-between align-items-center">
+                     <div class="col-xl-2 col-lg-auto">
+                        <div class="header-logo d-flex justify-content-between align-items-center">
+                           <a href="/">
+                              <img src="assets/img/logo.png" alt="Luxrio" class="logo" />
+                           </a>
+                           <div class="d-flex align-items-center gap-3">
+                              <button class="vs-menu-toggle d-inline-block d-lg-none">
+                                 <i class="fal fa-bars"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-10 col-lg-auto d-none d-lg-flex justify-content-end gap-md-4 gap-xl-5">
+                        <nav class="main-menu menu-style1 d-none d-lg-block">
+                           <ul class="d-flex justify-content-center align-items-center">
+                              <li>
+                                 <a href="/">Home</a>
+                              </li>
+                              <li>
+                                 <a href="travel-destinations">Travel Destinations</a>
+                              </li>
+                              <li>
+                                 <a href="car-rental-services">Car Rental</a>
+                              </li>
+                              <li>
+                                 <a href="tour-packages">Tour Packages</a>
+                              </li>
+                              <li>
+                                 <a href="days-tours">Days Tours</a>
+                              </li>
+                              <li>
+                                 <a href="testimonials">Feedback</a>
+                              </li>
+                              <li>
+                                 <a href="contact-us">Contact Us</a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+         </div>
+         <footer class="vs-footer-style1" data-bg-src="assets/img/footer/footer-style1-bg.png">
+            <div class="footer-top space-top">
+               <div class="container">
+                  <div class="row gx-4">
+                     <div class="col-12">
+                        <div class="footer-cta bg-third-theme-color fade-anim" data-bg-src="assets/img/footer/footer-cta-bg.png">
+                           <div class="row g-4 align-items-center">
+                              <div class="col-lg-9">
+                                 <div class="cta-contact-items">
+                                    <div class="contact-item">
+                                       <span class="icon">
+                                          <i class="fa-light fa-location-dot"></i>
+                                       </span>
+                                       <div class="info">
+                                          <h5 class="info-title text-white-color">Location</h5>
+                                          <p>77, 1st Floor A Block, Dwarka Sector -08, New Delhi 110077. India</p>
+                                       </div>
+                                    </div>
+                                    <div class="contact-item">
+                                       <span class="icon">
+                                          <i class="fa-sharp fa-light fa-phone-rotary"></i>
+                                       </span>
+                                       <div class="info">
+                                          <h5 class="info-title text-white-color"> Contact Us </h5>
+                                          <p>
+                                             <a href="mailto:info@indiatripplanners.com">info@indiatripplanners.com</a>
+                                             <a href="mailto:indiatriplanners@gmail.com">indiatriplanners@gmail.com</a>
+                                             <a href="tel:+918743855730">+91 8743-855-730</a>
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 d-flex justify-content-center justify-content-lg-end btn-trigger btn-bounce">
+                                 <a href="contact-us" class="vs-btn style6">
+                                    <span>booking now</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-center space-extra">
+               <div class="container">
+                  <div class="row gx-4 gy-4 gx-xl-2 justify-content-between">
+                     <div class="col-md-4">
+                        <div class="footer-widgets">
+                           <a href="/" class="logo">
+                              <img src="assets/img/logo.png" alt="logo" />
+                           </a>
+                           <p class="text-white">Offering the best tour operators who can cater to your every travel requirement while exploring India is the guiding principal of our company. The Indian sub-continent is wide and complex, travel from one city to another is a bit more complicated here than it is in many other countries.</p>
+                           <div class="social-media">
+                              <ul class="custom-ul">
+                                 <li>
+                                    <a href="https://www.facebook.com/IndiaTripplannerstouroperator" target="_blank">
+                                       <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://x.com/indiatrip_plan" target="_blank">
+                                       <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://www.instagram.com/india_trip_planners/" target="_blank">
+                                       <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://www.youtube.com/@indiatripplanners" target="_blank">
+                                       <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://in.pinterest.com/Indiatripplannersdelhi/" target="_blank">
+                                       <i class="fa-brands fa-pinterest"></i>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-5">
+                        <div class="footer-widgets">
+                           <h5 class="widgets-title text-white-color text-capitalize"> Useful Links </h5>
+                           <div class="row gx-xl-1 g-1">
+                              <div class="col-md-3">
+                                 <div class="footer-links">
+                                    <ul class="custom-ul">
+                                       <li>
+                                          <a href="/">
+                                             <i class="fa-solid fa-angles-right"></i> Home </a>
+                                       </li>
+                                       <li>
+                                          <a href="about-us">
+                                             <i class="fa-solid fa-angles-right"></i> About Us </a>
+                                       </li>
+                                       <li>
+                                          <a href="blogs">
+                                             <i class="fa-solid fa-angles-right"></i> Blogs </a>
+                                       </li>
+                                       <li>
+                                          <a href="photo-gallery">
+                                             <i class="fa-solid fa-angles-right"></i> Gallery </a>
+                                       </li>
+                                       <li>
+                                          <a href="contact-us">
+                                             <i class="fa-solid fa-angles-right"></i> Contact Us </a>
+                                       </li>
+                                       <li>
+                                          <a href="disclaimer">
+                                             <i class="fa-solid fa-angles-right"></i> Disclaimer </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-md-4">
+                                 <div class="footer-links ms-md-3 ms-0">
+                                    <ul class="custom-ul">
+                                       <li>
+                                          <a href="faq">
+                                             <i class="fa-solid fa-angles-right"></i> Faq's </a>
+                                       </li>
+                                       <li>
+                                          <a href="travel-destinations">
+                                             <i class="fa-solid fa-angles-right"></i> India Tour </a>
+                                       </li>
+                                       <li>
+                                          <a href="car-rental-services">
+                                             <i class="fa-solid fa-angles-right"></i> Car Rental </a>
+                                       </li>
+                                       <li>
+                                          <a href="days-tours">
+                                             <i class="fa-solid fa-angles-right"></i> Days Tours </a>
+                                       </li>
+                                       <li>
+                                          <a href="testimonials">
+                                             <i class="fa-solid fa-angles-right"></i> Feedback </a>
+                                       </li>
+                                       <li>
+                                          <a href="privacy-policy">
+                                             <i class="fa-solid fa-angles-right"></i> Privacy Policy </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-md-5">
+                                 <div class="footer-links">
+                                    <ul class="custom-ul">
+                                       <li>
+                                          <a href="india-visa">
+                                             <i class="fa-solid fa-angles-right"></i> India Visa </a>
+                                       </li>
+                                       <li>
+                                          <a href="travel-tips">
+                                             <i class="fa-solid fa-angles-right"></i> Travel Tips </a>
+                                       </li>
+                                       <li>
+                                          <a href="fair-and-festivals">
+                                             <i class="fa-solid fa-angles-right"></i> Fairs And Festivals </a>
+                                       </li>
+                                       <li>
+                                          <a href="safety-features">
+                                             <i class="fa-solid fa-angles-right"></i> Safety Features </a>
+                                       </li>
+                                       <li>
+                                          <a href="refund-and-cancellation">
+                                             <i class="fa-solid fa-angles-right"></i> Cancellation & Refund </a>
+                                       </li>
+                                       <li>
+                                          <a href="terms-and-conditions">
+                                             <i class="fa-solid fa-angles-right"></i> Terms & Conditions </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="footer-widgets">
+                           <h5 class="widgets-title text-white-color text-capitalize">Tour Packages </h5>
+                           <div class="row gx-xl-2 g-2">
+                              <div class="col-md-12">
+                                 <div class="footer-links">
+                                    <ul class="custom-ul">
+                                       <li>
+                                          <a href="#.">
+                                             <i class="fa-solid fa-angles-right"></i> Golden Triangle Tours </a>
+                                       </li>
+                                       <li>
+                                          <a href="#.">
+                                             <i class="fa-solid fa-angles-right"></i> Rajasthan Tours </a>
+                                       </li>
+                                       <li>
+                                          <a href="#.">
+                                             <i class="fa-solid fa-angles-right"></i> South India Tours </a>
+                                       </li>
+                                       <li>
+                                          <a href="#.">
+                                             <i class="fa-solid fa-angles-right"></i> India Off Beat Tour </a>
+                                       </li>
+                                       <li>
+                                          <a href="#.">
+                                             <i class="fa-solid fa-angles-right"></i> Same Day Tours </a>
+                                       </li>
+                                       <li>
+                                          <a href="#.">
+                                             <i class="fa-solid fa-angles-right"></i> North East Tour </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom bg-third-theme-color">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6 order-2 order-md-1">
+                        <p class="footer-copyright text-center text-md-start"> © <span class="current-year"></span>
+                           <a href="/" class="footer-links-color">India Trip Planners</a>, All Rights Reserved.
+                        </p>
+                     </div>
+                     <div class="col-md-6 order-2 order-md-1">
+                        <p class="footer-copyright text-center text-md-end"> Design & Development By <a href="http://aspiretechnosys.com/" target="_blank" class="footer-links-color">Aspire Technosys Pvt. Ltd.</a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <a href="#" class="scrollToTop scroll-btn">
+            <i class="far fa-arrow-up"></i>
+         </a>
+         <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+         <script src="assets/js/jquery-ui.min.js"></script>
+         <script src="assets/js/moment.min.js"></script>
+         <script src="assets/js/daterangepicker.min.js"></script>
+         <script src="assets/js/swiper-bundle.min.js"></script>
+         <script src="assets/js/bootstrap.min.js"></script>
+         <script src="assets/js/wow.min.js"></script>
+         <script src="assets/js/jquery.magnific-popup.min.js"></script>
+         <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+         <script src="assets/js/gsap.min.js"></script>
+         <script src="assets/js/ScrollTrigger.min.js"></script>
+         <script src="assets/js/ScrollToPlugin.min.js"></script>
+         <script src="assets/js/SplitText.min.js"></script>
+         <script src="assets/js/main.js"></script>
+          <script>
+              const swiper = new Swiper('.swiper.india-trip-slider', {
+                  loop: true,
+                  speed: 1000,
+                  autoplay: {
+                      delay: 5000,
+                      disableOnInteraction: false,
+                  },
+                  effect: 'fade',
+                  fadeEffect: {
+                      crossFade: true
+                  },
+                  navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                  },
+                  pagination: {
+                      el: '.swiper-pagination',
+                      clickable: true,
+                  },
+                  keyboard: {
+                      enabled: true,
+                      onlyInViewport: false,
+                  },
+              });
+          </script>
+          <script type="text/javascript">
+              function googleTranslateElementInit() {
+                  new google.translate.TranslateElement(
+                      { pageLanguage: 'en', includedLanguages: 'hi,en,fr,de,es', },
+                      'google_translate_element'
+                  );
+              }
+          </script>
+          <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </form>
+   </body>
+</html>

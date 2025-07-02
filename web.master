@@ -61,11 +61,11 @@
                </a>
             </div>
          </div>
-         <div class="preloader">
+<%--         <div class="preloader">
             <div class="preloader-inner">
                <img src="assets/img/loderr.png" alt="logo" />
             </div>
-         </div>
+         </div>--%>
          <div class="vs-menu-wrapper">
             <div class="vs-menu-area text-center">
                <div class="mobile-logo">
@@ -87,14 +87,33 @@
                      <li>
                         <a href="car-rental-services">Car Rental</a>
                      </li>
-                     <li>
+                     <li class="menu-item-has-children">
                         <a href="tour-packages">Tour Packages</a>
-                     </li>
-                     <li>
+                        <ul class="sub-menu">
+                            <li><a href="golden-triangle-tour-packages">Golden Triangle Tours</a></li>
+                            <li><a href="rajasthan-tour-packages">Rajasthan Tours</a></li>
+                            <li><a href="south-india-tour-packages">South India Tours</a></li>
+                            <li><a href="india-off-beat-tour-packages">India Off Beat Tour</a></li>
+                            <li><a href="same-day-tour-packages">Same Day Tours</a></li>
+                            <li><a href="sunrise-tour-packages">Sunrise Tours</a></li>
+                        </ul>
+                    </li>
+                     <li class="menu-item-has-children">
                         <a href="days-tours">Days Tours</a>
+                         <ul class="sub-menu">
+                            <li><a href="delhi-tour-packages">Delhi</a></li>
+                            <li><a href="uttar-pradesh-tour-packages">Uttar Pradesh</a></li>
+                            <li><a href="rajasthan-tour-packages">Rajasthan</a></li>
+                            <li><a href="maharashtra-tour-packages">Maharashtra</a></li>
+                            <li><a href="gujarat-tour-packages">Gujarat</a></li>
+                            <li><a href="west-bengal-tour-packages">West Bengal</a></li>
+                            <li><a href="karnataka-tour-packages">Karnataka</a></li>
+                            <li><a href="kerala-tour-packages">Kerala</a></li>
+                            <li><a href="tamil-nadu-tour-packages">Tamil Nadu</a></li>
+                        </ul>
                      </li>
                      <li>
-                        <a href="guest-book">Feedback</a>
+                        <a href="testimonials">Feedback</a>
                      </li>
                      <li>
                         <a href="contact-us">Contact</a>
@@ -107,9 +126,9 @@
             <div class="container custom-container">
                <div class="row justify-content-between align-items-center">
                   <div class="col-auto col-lg-2 order-3 order-md-1">
-                     <button class="vs-menu-toggle d-inline-block d-lg-none">
+                     <span class="vs-menu-toggle d-inline-block d-lg-none">
                         <i class="fal fa-bars"></i>
-                     </button>
+                     </span>
                      <div class="logo d-none d-lg-block">
                         <a href="/">
                            <img src="assets/img/logo.png" alt="img" class="logo" />
@@ -133,14 +152,33 @@
                            <li>
                               <a href="car-rental-services">Car Rental</a>
                            </li>
-                           <li>
-                              <a href="tour-packages">Tour Packages</a>
-                           </li>
-                           <li>
+                            <li class="menu-item-has-children">
+                                <a href="tour-packages">Tour Packages</a>
+                                <ul class="sub-menu">
+                                <li><a href="golden-triangle-tour-packages">Golden Triangle Tours</a></li>
+                                <li><a href="rajasthan-tour-packages">Rajasthan Tours</a></li>
+                                <li><a href="south-india-tour-packages">South India Tours</a></li>
+                                <li><a href="india-off-beat-tour-packages">India Off Beat Tour</a></li>
+                                <li><a href="same-day-tour-packages">Same Day Tours</a></li>
+                                <li><a href="sunrise-tour-packages">Sunrise Tours</a></li>
+                                </ul>
+                            </li>
+                           <li class="menu-item-has-children">
                               <a href="days-tours">Days Tours</a>
+                               <ul class="sub-menu">
+                                    <li><a href="delhi-tour-packages">Delhi</a></li>
+                                    <li><a href="uttar-pradesh-tour-packages">Uttar Pradesh</a></li>
+                                    <li><a href="rajasthan-tour-packages">Rajasthan</a></li>
+                                    <li><a href="maharashtra-tour-packages">Maharashtra</a></li>
+                                    <li><a href="gujarat-tour-packages">Gujarat</a></li>
+                                    <li><a href="west-bengal-tour-packages">West Bengal</a></li>
+                                    <li><a href="karnataka-tour-packages">Karnataka</a></li>
+                                    <li><a href="kerala-tour-packages">Kerala</a></li>
+                                    <li><a href="tamil-nadu-tour-packages">Tamil Nadu</a></li>
+                                </ul>
                            </li>
                            <li>
-                              <a href="guest-book">Feedback</a>
+                              <a href="testimonials">Feedback</a>
                            </li>
                            <li>
                               <a href="contact-us">Contact Us</a>
@@ -175,16 +213,6 @@
                                              <i class="fa-solid fa-phone-volume"></i>
                                              <a href="tel:+918743855730">+91 874-385-5730</a>
                                           </li>
-                                          <!-- <li>
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22" viewBox="0 0 4 22" fill="none">
-                                                <line x1="0.75" y1="2.774e-08" x2="0.749999" y2="21.6114" stroke="white" stroke-opacity="0.3" stroke-width="1.5" />
-                                                <line x1="3.5" y1="3.92926" x2="3.5" y2="17.682" stroke="white" stroke-opacity="0.3" />
-                                             </svg>
-                                          </li>
-                                          <li>
-                                             <i class="fa-solid fa-envelope"></i>
-                                             <a href="mailto:info@indiatripplanners.com">info@indiatripplanners.com</a>
-                                          </li> -->
                                           <li>
                                              <div id="google_translate_element"></div>
                                           </li>
@@ -241,9 +269,9 @@
                               <img src="assets/img/logo.png" alt="Luxrio" class="logo" />
                            </a>
                            <div class="d-flex align-items-center gap-3">
-                              <button class="vs-menu-toggle d-inline-block d-lg-none">
+                              <span class="vs-menu-toggle d-inline-block d-lg-none">
                                  <i class="fal fa-bars"></i>
-                              </button>
+                              </span>
                            </div>
                         </div>
                      </div>
@@ -259,14 +287,33 @@
                               <li>
                                  <a href="car-rental-services">Car Rental</a>
                               </li>
-                              <li>
+                              <li class="menu-item-has-children">
                                  <a href="tour-packages">Tour Packages</a>
+                                  <ul class="sub-menu">
+                                    <li><a href="golden-triangle-tour-packages">Golden Triangle Tours</a></li>
+                                    <li><a href="rajasthan-tour-packages">Rajasthan Tours</a></li>
+                                    <li><a href="south-india-tour-packages">South India Tours</a></li>
+                                    <li><a href="india-off-beat-tour-packages">India Off Beat Tour</a></li>
+                                    <li><a href="same-day-tour-packages">Same Day Tours</a></li>
+                                    <li><a href="sunrise-tour-packages">Sunrise Tours</a></li>
+                                  </ul>
                               </li>
-                              <li>
+                              <li class="menu-item-has-children">
                                  <a href="days-tours">Days Tours</a>
+                                <ul class="sub-menu">
+                                    <li><a href="delhi-tour-packages">Delhi</a></li>
+                                    <li><a href="uttar-pradesh-tour-packages">Uttar Pradesh</a></li>
+                                    <li><a href="rajasthan-tour-packages">Rajasthan</a></li>
+                                    <li><a href="maharashtra-tour-packages">Maharashtra</a></li>
+                                    <li><a href="gujarat-tour-packages">Gujarat</a></li>
+                                    <li><a href="west-bengal-tour-packages">West Bengal</a></li>
+                                    <li><a href="karnataka-tour-packages">Karnataka</a></li>
+                                    <li><a href="kerala-tour-packages">Kerala</a></li>
+                                    <li><a href="tamil-nadu-tour-packages">Tamil Nadu</a></li>
+                                </ul>
                               </li>
                               <li>
-                                 <a href="guest-book">Feedback</a>
+                                 <a href="testimonials">Feedback</a>
                               </li>
                               <li>
                                  <a href="contact-us">Contact Us</a>
@@ -419,7 +466,7 @@
                                              <i class="fa-solid fa-angles-right"></i> Days Tours </a>
                                        </li>
                                        <li>
-                                          <a href="guest-book">
+                                          <a href="testimonials">
                                              <i class="fa-solid fa-angles-right"></i> Feedback </a>
                                        </li>
                                        <li>
@@ -470,19 +517,19 @@
                                  <div class="footer-links">
                                     <ul class="custom-ul">
                                        <li>
-                                          <a href="#.">
+                                          <a href="golden-triangle-tour-packages">
                                              <i class="fa-solid fa-angles-right"></i> Golden Triangle Tours </a>
                                        </li>
                                        <li>
-                                          <a href="#.">
+                                          <a href="rajasthan-tour-packages">
                                              <i class="fa-solid fa-angles-right"></i> Rajasthan Tours </a>
                                        </li>
                                        <li>
-                                          <a href="#.">
+                                          <a href="south-india-tour-packages">
                                              <i class="fa-solid fa-angles-right"></i> South India Tours </a>
                                        </li>
                                        <li>
-                                          <a href="#.">
+                                          <a href="india-off-beat-tour-packages">
                                              <i class="fa-solid fa-angles-right"></i> India Off Beat Tour </a>
                                        </li>
                                        <li>
