@@ -4,7 +4,7 @@ Partial Class contact_us
     Protected Sub btnSubmit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnSubmit.Click
         If Page.IsValid Then
             Try
-                If validation.isMobileNumber(txtMobile.Text) Then
+                If validation.isMobileNumber(txtMobile.Text) And Len(txtMobile.Text) <= 11 And txtName.Text.Contains("BTC") = False And txtName.Text.Contains("bitcoin") = False Then
 
                     Dim BLL As New BusinessLogicLayer()
                     Dim pageurl As String = Request.UrlReferrer.ToString
@@ -20,7 +20,7 @@ Partial Class contact_us
                     templateVars.Add("NoOfPerson", ddlTravelers.SelectedValue)
                     templateVars.Add("Hotel", ddlHotel.SelectedValue)
                     templateVars.Add("IPAddress", Request.ServerVariables("remote_addr"))
-                    BLL.ExecNonQueryProc("Prc_WebsiteQuery", "@Name", txtName.Text, "@EmailId", txtEmail.Text, "@ContactNo", txtMobile.Text, "@Destination", ddlRequirement.SelectedValue, "@Duration", "@CheckInDate", txtDateArr.Text, "@NoOfPerson", ddlTravelers.SelectedValue, txtMsg.Text, "@PageName", pageurl, "@IP", Request.ServerVariables("remote_addr"))
+                    BLL.ExecNonQueryProc("Prc_WebsiteQuery", "@Name", txtName.Text, "@EmailId", txtEmail.Text, "@ContactNo", txtMobile.Text, "@Destination", ddlRequirement.SelectedValue, "@Hotel", ddlHotel.SelectedValue, "@CheckInDate", txtDateArr.Text, "@ChecOutDate", txtDateDep.Text, "@NoOfPerson", ddlTravelers.SelectedValue, "@Civility", txtMsg.Text, "@PageName", pageurl, "@IP", Request.ServerVariables("remote_addr"))
 
                     Email.SendEmail("contact_email.htm", templateVars, System.Configuration.ConfigurationManager.AppSettings("email"), System.Configuration.ConfigurationManager.AppSettings("infoemail"), "Contact Enquiry From Website")
                     txtName.Text = ""
@@ -33,4 +33,5 @@ Partial Class contact_us
             End Try
         End If
     End Sub
+
 End Class

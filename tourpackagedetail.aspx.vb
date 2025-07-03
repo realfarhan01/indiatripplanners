@@ -91,7 +91,7 @@ Partial Class tourpackagedetail
     Protected Sub btnSubmit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnSubmit.Click
         If Page.IsValid Then
             Try
-                If validation.isMobileNumber(txtMobile.Text) Then
+                If validation.isMobileNumber(txtMobile.Text) And Len(txtMobile.Text) <= 11 And txtName.Text.Contains("BTC") = False And txtName.Text.Contains("bitcoin") = False Then
 
                     Dim BLL As New BusinessLogicLayer()
                     Dim pageurl As String = Request.UrlReferrer.ToString
@@ -102,10 +102,13 @@ Partial Class tourpackagedetail
                     templateVars.Add("Message", txtMsg.Text)
                     templateVars.Add("PageName", pageurl)
                     templateVars.Add("Requirement", ddlRequirement.SelectedValue)
+                    templateVars.Add("Vehicle", ddlVehicle.SelectedValue)
+                    templateVars.Add("NoOfPerson", ddlTravelers.SelectedValue)
+                    templateVars.Add("Hotel", ddlHotel.SelectedValue)
                     templateVars.Add("IPAddress", Request.ServerVariables("remote_addr"))
-                    BLL.ExecNonQueryProc("Prc_WebsiteQuery", "@Name", txtName.Text, "@EmailId", txtEmail.Text, "@ContactNo", txtMobile.Text, "@Destination", ddlRequirement.SelectedValue, "@Duration", txtMsg.Text, "@PageName", pageurl, "@IP", Request.ServerVariables("remote_addr"))
+                    BLL.ExecNonQueryProc("Prc_WebsiteQuery", "@Name", txtName.Text, "@EmailId", txtEmail.Text, "@ContactNo", txtMobile.Text, "@City", ddlRequirement.SelectedValue, "@Hotel", ddlHotel.SelectedValue, "@Budget", ddlVehicle.SelectedValue, "@NoOfPerson", ddlTravelers.SelectedValue, "@Civility", txtMsg.Text, "@PageName", pageurl, "@IP", Request.ServerVariables("remote_addr"))
 
-                    Email.SendEmail("contact_email.htm", templateVars, System.Configuration.ConfigurationManager.AppSettings("email"), System.Configuration.ConfigurationManager.AppSettings("infoemail"), "Contact Enquiry From Website")
+                    Email.SendEmail("booking_form.htm", templateVars, System.Configuration.ConfigurationManager.AppSettings("email"), System.Configuration.ConfigurationManager.AppSettings("infoemail"), "Contact Enquiry From Website")
                     txtName.Text = ""
                     txtMsg.Text = ""
                     txtMobile.Text = ""

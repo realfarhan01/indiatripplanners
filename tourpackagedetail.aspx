@@ -30,36 +30,92 @@
               <div class="col-md-12 index-form">
                   <div action="#." method="post" class="form-style1">
                      <div class="row">
-                        <div class="col-md-6 form-group">
+                        <div class="col-md-4 form-group">
                             <asp:TextBox ID="txtName"  class="form-control" placeholder="Enter Your Name*" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="mb-1" ControlToValidate="txtName" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Name*"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="mb-1" ControlToValidate="txtName" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Name*"></asp:RequiredFieldValidator>
                         </div>
-                        <div class="col-md-6 form-group">
+                        <div class="col-md-4 form-group">
                             <asp:TextBox ID="txtMobile" class="form-control" placeholder="Enter Your Phone Number*" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="mb-1" ControlToValidate="txtMobile" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Phone Number*"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="mb-1" ControlToValidate="txtMobile" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Phone Number*"></asp:RequiredFieldValidator>
                         </div>
-                        <div class="col-md-6 form-group">
+                        <div class="col-md-4 form-group">
                             <asp:TextBox ID="txtEmail" class="form-control" placeholder="Enter Your Email*" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" CssClass="mb-1" ControlToValidate="txtEmail" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Email*"></asp:RequiredFieldValidator>
                         </div>
-                        <div class="col-md-6 form-group">
-                             <asp:DropDownList id="ddlRequirement" name="ddlState" runat="server"  CssClass="form-select nice-select ddlRequirement">
-                                <asp:ListItem Value="">Select Tour Packages</asp:ListItem>
-                                <asp:ListItem Value="North India">North India</asp:ListItem>
-                                <asp:ListItem Value="South India">South India</asp:ListItem>
-                                <asp:ListItem Value="Central India">Central India</asp:ListItem>
-                                <asp:ListItem Value="North-East India">North-East India</asp:ListItem>
-                                <asp:ListItem Value="UAE">UAE</asp:ListItem>
-                                <asp:ListItem Value="Thailand">Thailand</asp:ListItem>
-                                <asp:ListItem Value="Nepal">Nepal</asp:ListItem>
-                                <asp:ListItem Value="Bhutan">Bhutan</asp:ListItem>
-                                <asp:ListItem Value="Other">Other</asp:ListItem>
+                        <div class="col-md-3 form-group">
+                             <asp:DropDownList id="ddlTravelers" name="ddlState" runat="server"  CssClass="form-select nice-select ddlRequirement">
+                                <asp:ListItem Value="">Number of traveler</asp:ListItem>
+                                <asp:ListItem Value="1">1</asp:ListItem>
+                                <asp:ListItem Value="2">2</asp:ListItem>
+                                <asp:ListItem Value="3">3</asp:ListItem>
+                                <asp:ListItem Value="4">4</asp:ListItem>
+                                <asp:ListItem Value="5">5</asp:ListItem>
+                                <asp:ListItem Value="6">6</asp:ListItem>
+                                <asp:ListItem Value="7">7</asp:ListItem>
+                                <asp:ListItem Value="8">8</asp:ListItem>
+                                <asp:ListItem Value="9">9</asp:ListItem>
+                                <asp:ListItem Value="10">10</asp:ListItem>
+                                <asp:ListItem Value="11">11</asp:ListItem>
+                                <asp:ListItem Value="12">12</asp:ListItem>
+                                <asp:ListItem Value="13">13</asp:ListItem>
+                                <asp:ListItem Value="14">14</asp:ListItem>
+                                <asp:ListItem Value="15">15</asp:ListItem>
+                                <asp:ListItem Value="16">16</asp:ListItem>
+                                <asp:ListItem Value="17">17</asp:ListItem>
+                                <asp:ListItem Value="18">18</asp:ListItem>
+                                <asp:ListItem Value="19">19</asp:ListItem>
+                                <asp:ListItem Value="20">20</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" CssClass="mb-1" ControlToValidate="ddlRequirement" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Select Tour Package*"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" CssClass="mb-1" ControlToValidate="ddlTravelers" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Select Travelers*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-md-3 form-group">
+                             <asp:DropDownList id="ddlRequirement" name="ddlState" runat="server"  CssClass="form-select nice-select ddlRequirement">
+                                <asp:ListItem Value="">Select Children</asp:ListItem>
+                                <asp:ListItem Value="0">0</asp:ListItem>
+                                <asp:ListItem Value="1">1</asp:ListItem>
+                                <asp:ListItem Value="2">2</asp:ListItem>
+                                <asp:ListItem Value="3">3</asp:ListItem>
+                                <asp:ListItem Value="4">4</asp:ListItem>
+                                <asp:ListItem Value="5">5</asp:ListItem>
+                                <asp:ListItem Value="6">6</asp:ListItem>
+                                <asp:ListItem Value="7">7</asp:ListItem>
+                                <asp:ListItem Value="8">8</asp:ListItem>
+                                <asp:ListItem Value="9">9</asp:ListItem>
+                                <asp:ListItem Value="10">10</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" CssClass="mb-1" ControlToValidate="ddlRequirement" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Select Children*"></asp:RequiredFieldValidator>
+                        </div>
+                         <div class="col-md-3 form-group">
+                             <asp:DropDownList id="ddlVehicle" name="ddlState" runat="server"  CssClass="form-select nice-select ddlRequirement">
+                                <asp:ListItem Value="">Select Vehicle Type</asp:ListItem>
+                                <asp:ListItem Value="Economy Cars">Economy Cars</asp:ListItem>
+                                <asp:ListItem Value="Luxury Cars">Luxury Cars</asp:ListItem>
+                                <asp:ListItem Value="SUV - MUV Cars">SUV /MUV Cars</asp:ListItem>
+                                <asp:ListItem Value="Coaches">Coaches</asp:ListItem>
+                                <asp:ListItem Value="Others">Others</asp:ListItem>
+                                <asp:ListItem Value="Not Required">Not Required</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" CssClass="mb-1" ControlToValidate="ddlVehicle" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Select Vehicle*"></asp:RequiredFieldValidator>
+                        </div>
+                         <div class="col-md-3 form-group">
+                             <asp:DropDownList id="ddlHotel" name="ddlState" runat="server"  CssClass="form-select nice-select ddlRequirement">
+                                <asp:ListItem Value="">Select Hotel Category</asp:ListItem>
+                                <asp:ListItem Value="Five Star">Five Star</asp:ListItem>
+                                <asp:ListItem Value="Five Star Heritage Hotel">Five Star Heritage Hotel</asp:ListItem>
+                                <asp:ListItem Value="2-3 Star">2-3 Star</asp:ListItem>
+                                <asp:ListItem Value="Budget Hotel">Budget Hotel</asp:ListItem>
+                                <asp:ListItem Value="Motel">Motel</asp:ListItem>
+                                <asp:ListItem Value="Guest House">Guest House</asp:ListItem>
+                                <asp:ListItem Value="Paying Guest">Paying Guest</asp:ListItem>
+                                <asp:ListItem Value="Accomodation">Accomodation</asp:ListItem>
+                                <asp:ListItem Value="Book on your own">Book on your own</asp:ListItem>
+                                <asp:ListItem Value="Not Required">Not Required</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" CssClass="mb-1" ControlToValidate="ddlHotel" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Select Hotel*"></asp:RequiredFieldValidator>
                         </div>
                         <div class="col-12 form-group">
                             <asp:TextBox ID="txtMsg" TextMode="MultiLine" class="form-control" placeholder="Your Message..." runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" CssClass="mb-1" ControlToValidate="txtMsg" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Message...*"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" CssClass="mb-1" ControlToValidate="txtMsg" ValidationGroup="contact-page" runat="server" ErrorMessage="Please Enter Your Message...*"></asp:RequiredFieldValidator>
                         </div>
                         <div class="col-12 form-group mt-2 mb-0 text-center">
                             <asp:Button formnovalidate="formnovalidate" ID="btnSubmit" ValidationGroup="contact-page" class="vs-btn" runat="server" Text="Submit" />

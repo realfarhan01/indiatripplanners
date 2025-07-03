@@ -173,11 +173,11 @@
                         <script>
                             $(function () {
                                 $("#<%= txtDateArr.ClientID %>").datepicker({
-                                    dateFormat: "mm/dd/yy",
+                                    dateFormat: "dd/mm/yy",
                                     minDate: 0
                                 });
                                 $("#<%= txtDateDep.ClientID %>").datepicker({
-                                    dateFormat: "mm/dd/yy",
+                                    dateFormat: "dd/mm/yy",
                                     minDate: 0
                                 });
                             });
