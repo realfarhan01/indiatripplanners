@@ -1081,6 +1081,9 @@ ul.wp-block-rss a {
     --bs-gutter-x: 30px;
   }
 }
+.container-fluid.vs-contact.vs-contact-index.mt-5 .row:not([class*=gx-]) {
+    --bs-gutter-x: 0px;
+}
 .gy-gx {
   --bs-gutter-y: var(--bs-gutter-x);
 }

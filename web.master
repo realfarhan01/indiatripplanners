@@ -82,10 +82,7 @@
                         <a href="/">Home</a>
                      </li>
                      <li>
-                        <a href="travel-destinations">Travel Destinations</a>
-                     </li>
-                     <li>
-                        <a href="car-rental-services">Car Rental</a>
+                        <a href="testimonials">Feedback</a>
                      </li>
                      <li class="menu-item-has-children">
                         <a href="tour-packages">Tour Packages</a>
@@ -97,23 +94,15 @@
                             <li><a href="same-day-tour-packages">Same Day Tours</a></li>
                             <li><a href="sunrise-tour-packages">Sunrise Tours</a></li>
                         </ul>
-                    </li>
-                     <li class="menu-item-has-children">
-                        <a href="days-tours">Days Tours</a>
-                         <ul class="sub-menu">
-                            <li><a href="delhi-tour-packages">Delhi</a></li>
-                            <li><a href="uttar-pradesh-tour-packages">Uttar Pradesh</a></li>
-                            <li><a href="rajasthan-tour-packages">Rajasthan</a></li>
-                            <li><a href="maharashtra-tour-packages">Maharashtra</a></li>
-                            <li><a href="gujarat-tour-packages">Gujarat</a></li>
-                            <li><a href="west-bengal-tour-packages">West Bengal</a></li>
-                            <li><a href="karnataka-tour-packages">Karnataka</a></li>
-                            <li><a href="kerala-tour-packages">Kerala</a></li>
-                            <li><a href="tamil-nadu-tour-packages">Tamil Nadu</a></li>
-                        </ul>
+                    </li>                    
+                     <li>
+                        <a href="same-day-tour-packages">Days Tours</a>
+                     </li> 
+                     <li>
+                        <a href="travel-destinations">India Group Tours</a>
                      </li>
                      <li>
-                        <a href="testimonials">Feedback</a>
+                        <a href="car-rental-services">Car Rental</a>
                      </li>
                      <li>
                         <a href="contact-us">Contact</a>
@@ -147,10 +136,7 @@
                               <a href="/">Home</a>
                            </li>
                            <li>
-                              <a href="travel-destinations">Travel Destinations</a>
-                           </li>
-                           <li>
-                              <a href="car-rental-services">Car Rental</a>
+                              <a href="testimonials">Feedback</a>
                            </li>
                             <li class="menu-item-has-children">
                                 <a href="tour-packages">Tour Packages</a>
@@ -163,22 +149,14 @@
                                 <li><a href="sunrise-tour-packages">Sunrise Tours</a></li>
                                 </ul>
                             </li>
-                           <li class="menu-item-has-children">
-                              <a href="days-tours">Days Tours</a>
-                               <ul class="sub-menu">
-                                    <li><a href="delhi-tour-packages">Delhi</a></li>
-                                    <li><a href="uttar-pradesh-tour-packages">Uttar Pradesh</a></li>
-                                    <li><a href="rajasthan-tour-packages">Rajasthan</a></li>
-                                    <li><a href="maharashtra-tour-packages">Maharashtra</a></li>
-                                    <li><a href="gujarat-tour-packages">Gujarat</a></li>
-                                    <li><a href="west-bengal-tour-packages">West Bengal</a></li>
-                                    <li><a href="karnataka-tour-packages">Karnataka</a></li>
-                                    <li><a href="kerala-tour-packages">Kerala</a></li>
-                                    <li><a href="tamil-nadu-tour-packages">Tamil Nadu</a></li>
-                                </ul>
+                           <li>
+                              <a href="same-day-tour-packages">Days Tours</a>
                            </li>
                            <li>
-                              <a href="testimonials">Feedback</a>
+                              <a href="travel-destinations">India Group Tours</a>
+                           </li>
+                           <li>
+                              <a href="car-rental-services">Car Rental</a>
                            </li>
                            <li>
                               <a href="contact-us">Contact Us</a>
@@ -282,10 +260,7 @@
                                  <a href="/">Home</a>
                               </li>
                               <li>
-                                 <a href="travel-destinations">Travel Destinations</a>
-                              </li>
-                              <li>
-                                 <a href="car-rental-services">Car Rental</a>
+                                 <a href="testimonials">Feedback</a>
                               </li>
                               <li class="menu-item-has-children">
                                  <a href="tour-packages">Tour Packages</a>
@@ -298,22 +273,14 @@
                                     <li><a href="sunrise-tour-packages">Sunrise Tours</a></li>
                                   </ul>
                               </li>
-                              <li class="menu-item-has-children">
-                                 <a href="days-tours">Days Tours</a>
-                                <ul class="sub-menu">
-                                    <li><a href="delhi-tour-packages">Delhi</a></li>
-                                    <li><a href="uttar-pradesh-tour-packages">Uttar Pradesh</a></li>
-                                    <li><a href="rajasthan-tour-packages">Rajasthan</a></li>
-                                    <li><a href="maharashtra-tour-packages">Maharashtra</a></li>
-                                    <li><a href="gujarat-tour-packages">Gujarat</a></li>
-                                    <li><a href="west-bengal-tour-packages">West Bengal</a></li>
-                                    <li><a href="karnataka-tour-packages">Karnataka</a></li>
-                                    <li><a href="kerala-tour-packages">Kerala</a></li>
-                                    <li><a href="tamil-nadu-tour-packages">Tamil Nadu</a></li>
-                                </ul>
+                              <li>
+                                 <a href="same-day-tour-packages">Days Tours</a>
                               </li>
                               <li>
-                                 <a href="testimonials">Feedback</a>
+                                 <a href="travel-destinations">India Group Tours</a>
+                              </li>
+                              <li>
+                                 <a href="car-rental-services">Car Rental</a>
                               </li>
                               <li>
                                  <a href="contact-us">Contact Us</a>
@@ -455,7 +422,7 @@
                                        </li>
                                        <li>
                                           <a href="travel-destinations">
-                                             <i class="fa-solid fa-angles-right"></i> India Tour </a>
+                                             <i class="fa-solid fa-angles-right"></i> India Group Tours </a>
                                        </li>
                                        <li>
                                           <a href="car-rental-services">
@@ -533,7 +500,7 @@
                                              <i class="fa-solid fa-angles-right"></i> India Off Beat Tour </a>
                                        </li>
                                        <li>
-                                          <a href="#.">
+                                          <a href="same-day-tour-packages">
                                              <i class="fa-solid fa-angles-right"></i> Same Day Tours </a>
                                        </li>
                                        <li>

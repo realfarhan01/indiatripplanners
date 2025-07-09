@@ -25,18 +25,22 @@
             <div class="swiper-pagination"></div>
          </div>
       </section>
-      <div class="container vs-contact mt-5">
+      <div class="container-fluid vs-contact vs-contact-index mt-5">
           <div class="row justify-content-center">
               <div class="col-md-12 index-form">
                   <div action="#." method="post" class="form-style1 border-5">
                      <div class="row">
-                        <div class="col-md-3 form-group">
+                        <div class="col-md-2 form-group">
                             <asp:TextBox ID="txtName"  class="form-control" placeholder="Enter Your Name*" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="mb-1" ControlToValidate="txtName" ValidationGroup="index" runat="server" ErrorMessage="Please Enter Your Name*"></asp:RequiredFieldValidator>
                         </div>
                         <div class="col-md-3 form-group">
                             <asp:TextBox ID="txtMobile" class="form-control" placeholder="Enter Your Phone Number*" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="mb-1" ControlToValidate="txtMobile" ValidationGroup="index" runat="server" ErrorMessage="Please Enter Your Phone Number*"></asp:RequiredFieldValidator>
+                        </div>
+                        <div class="col-md-2 form-group">
+                            <asp:TextBox ID="txtEmail" class="form-control" placeholder="Enter Your Email*" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" CssClass="mb-1" ControlToValidate="txtEmail" ValidationGroup="index" runat="server" ErrorMessage="Please Enter Your Email*"></asp:RequiredFieldValidator>
                         </div>
                         <div class="col-md-3 form-group">
                              <asp:DropDownList id="ddlRequirement" name="ddlState" runat="server"  CssClass="form-select nice-select ddlRequirement">
@@ -53,7 +57,7 @@
                             </asp:DropDownList>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" CssClass="mb-1" ControlToValidate="ddlRequirement" ValidationGroup="index" runat="server" ErrorMessage="Please Select Tour Package*"></asp:RequiredFieldValidator>
                         </div>
-                        <div class="col-md-3  form-group mt-2 mb-0">
+                        <div class="col-md-2  form-group mt-2 mb-0">
                             <asp:Button formnovalidate="formnovalidate" ID="btnSubmit" ValidationGroup="index" class="vs-btn" runat="server" Text="Submit" Style="width:-webkit-fill-available;"/>
                         </div>
                      </div>
@@ -195,7 +199,7 @@
                      <div class="destination-content">
                         <div class="info">
                            <h4 class="text-white text-capitalize">
-                              <a href="days-tours">Golden Triangle Tours</a>
+                              <a href="golden-triangle-tour-packages">Golden Triangle Tours</a>
                            </h4>
                         </div>
                      </div>
@@ -209,7 +213,7 @@
                      <div class="destination-content">
                         <div class="info">
                            <h4 class="text-white text-capitalize">
-                              <a href="days-tours">Rajasthan Tours</a>
+                              <a href="rajasthan-tour-packages">Rajasthan Tours</a>
                            </h4>
                         </div>
                      </div>
@@ -223,7 +227,7 @@
                      <div class="destination-content">
                         <div class="info">
                            <h4 class="text-white text-capitalize">
-                              <a href="days-tours">South India Tours</a>
+                              <a href="south-india-tour-packages">South India Tours</a>
                            </h4>
                         </div>
                      </div>
@@ -237,7 +241,7 @@
                      <div class="destination-content">
                         <div class="info">
                            <h4 class="text-white text-capitalize">
-                              <a href="days-tours">India Off Beat Tour</a>
+                              <a href="india-off-beat-tour-packages">India Off Beat Tour</a>
                            </h4>
                         </div>
                      </div>

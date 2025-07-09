@@ -60,12 +60,13 @@ Partial Class index
                     Dim templateVars As New Hashtable()
                     templateVars.Add("Name", txtName.Text)
                     templateVars.Add("Contact", txtMobile.Text)
+                    templateVars.Add("Email", txtEmail.Text)
                     templateVars.Add("PageName", pageurl)
                     templateVars.Add("Requirement", ddlRequirement.SelectedValue)
                     templateVars.Add("IPAddress", Request.ServerVariables("remote_addr"))
-                    BLL.ExecNonQueryProc("Prc_WebsiteQuery", "@Name", txtName.Text, "@ContactNo", txtMobile.Text, "@Destination", ddlRequirement.SelectedValue, "@PageName", pageurl, "@IP", Request.ServerVariables("remote_addr"))
+                    BLL.ExecNonQueryProc("Prc_WebsiteQuery", "@Name", txtName.Text, "@EmailId", txtEmail.Text, "@ContactNo", txtMobile.Text, "@Destination", ddlRequirement.SelectedValue, "@PageName", pageurl, "@IP", Request.ServerVariables("remote_addr"))
 
-                    Email.SendEmail("contact_email.htm", templateVars, System.Configuration.ConfigurationManager.AppSettings("email"), System.Configuration.ConfigurationManager.AppSettings("infoemail"), "Contact Enquiry From Website")
+                    Email.SendEmail("index_query.htm", templateVars, System.Configuration.ConfigurationManager.AppSettings("email"), System.Configuration.ConfigurationManager.AppSettings("infoemail"), "Contact Enquiry From Website")
                     txtName.Text = ""
                     txtMobile.Text = ""
                     Page.ClientScript.RegisterClientScriptBlock(Me.GetType(), "error", "alert('Your details has been submited successfully. We will contact you as soon!!');window.location.href='/';", True)

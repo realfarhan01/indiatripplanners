@@ -108,7 +108,7 @@ Partial Class tourpackagedetail
                     templateVars.Add("IPAddress", Request.ServerVariables("remote_addr"))
                     BLL.ExecNonQueryProc("Prc_WebsiteQuery", "@Name", txtName.Text, "@EmailId", txtEmail.Text, "@ContactNo", txtMobile.Text, "@City", ddlRequirement.SelectedValue, "@Hotel", ddlHotel.SelectedValue, "@Budget", ddlVehicle.SelectedValue, "@NoOfPerson", ddlTravelers.SelectedValue, "@Civility", txtMsg.Text, "@PageName", pageurl, "@IP", Request.ServerVariables("remote_addr"))
 
-                    Email.SendEmail("booking_form.htm", templateVars, System.Configuration.ConfigurationManager.AppSettings("email"), System.Configuration.ConfigurationManager.AppSettings("infoemail"), "Contact Enquiry From Website")
+                    Email.SendEmail("booking_form.htm", templateVars, System.Configuration.ConfigurationManager.AppSettings("email"), System.Configuration.ConfigurationManager.AppSettings("infoemail"), System.Configuration.ConfigurationManager.AppSettings("bccemail"), "Contact Enquiry From Website")
                     txtName.Text = ""
                     txtMsg.Text = ""
                     txtMobile.Text = ""
